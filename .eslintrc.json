@@ -6,12 +6,24 @@
     "extends": [
         "airbnb-base", "eslint-config-prettier"
     ],
+    "plugins": ["eslint-plugin-prettier"],
     "parserOptions": {
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
-    "plugins": ["eslint-plugin-prettier"],
+    "settings": {
+        "import/ignore": [".css$", "node_modules/*"]
+    },
     "rules": {
-        "prettier/prettier": "error"
+        "indent": "off",
+        "linebreak-style": 0,
+        "quotes": ["error", "double"],
+        "semi": ["error", "always"],
+        "prettier/prettier": [
+            "error", 
+            {
+                "endOfLine": "auto"
+            }
+        ]
     }
 }
