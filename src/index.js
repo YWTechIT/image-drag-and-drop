@@ -7,7 +7,7 @@ import "./css/style.css";
 import "./css/upload.css";
 
 const input = document.getElementById("input");
-const label = document.getElementById("label");
+const initLabel = document.getElementById("label");
 
 input.addEventListener("change", (event) => {
   const files = changeEvent(event);
@@ -15,13 +15,15 @@ input.addEventListener("change", (event) => {
   handleUpdate(isValidFiles);
 });
 
-label.addEventListener("mouseover", (event) => {
+initLabel.addEventListener("mouseover", (event) => {
   event.preventDefault();
+  const label = document.getElementById("label");
   label?.classList.add("label--hover");
 });
 
-label.addEventListener("mouseout", (event) => {
+initLabel.addEventListener("mouseout", (event) => {
   event.preventDefault();
+  const label = document.getElementById("label");
   label?.classList.remove("label--hover");
 });
 
