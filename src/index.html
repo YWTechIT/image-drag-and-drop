@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
@@ -9,7 +9,14 @@
 </head>
 
 <body>
-  <div>첫 화면</div>
+  <main class="container">
+    <label class="label" id="label" for="input">
+      <div class="inner" id="inner">드래그하거나 클릭해서 업로드</div>
+    </label>
+    <input id="input" class="input" accept="image/*" type="file" required="true" multiple="true" hidden="true">
+    <p class="preview-title">preview</p>
+    <div class="preview" id="preview"></div>
+  </main>
 </body>
 
 </html>
