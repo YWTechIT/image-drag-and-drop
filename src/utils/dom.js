@@ -1,5 +1,5 @@
 /*!
- * code source: https://marshall-ku.com/web/log/%ec%97%98%eb%a6%ac%ec%8a%a4-sw%ed%8a%b8%eb%9e%99-%ed%8c%80-%ed%94%84%eb%a1%9c%ec%a0%9d%ed%8a%b8-%ec%a4%91%ea%b0%84-%ed%9a%8c%ea%b3%a0
+ * code source: https://kdt-gitlab.elice.io/sw-001-project/team2/have-u-tried-this/-/blob/master/frontend/src/ts/utils/dom.ts
 */
 
 export default function el(nodeName, attributes, ...children) {
